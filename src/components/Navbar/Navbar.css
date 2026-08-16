@@ -1,0 +1,597 @@
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    padding:22px 0;
+
+    transition:.35s ease;
+
+}
+
+.navbar.scrolled{
+
+    padding:14px 0;
+
+    background:rgba(7,17,31,.82);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+
+}
+
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.navbar-container{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:0 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+}
+
+/* ===========================================
+   LOGO
+=========================================== */
+
+.logo{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    text-decoration:none;
+
+    color:white;
+
+    letter-spacing:-1px;
+
+    transition:.35s;
+
+    flex-shrink:0;
+
+}
+
+.logo span{
+
+    color:#d4af37;
+
+}
+
+.logo:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================================
+   MENU
+=========================================== */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:45px;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#d6deea;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+    white-space:nowrap;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d4af37;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================================
+   RIGHT
+=========================================== */
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+    flex-shrink:0;
+
+}
+
+/* ===========================================
+   SOCIAL
+=========================================== */
+
+.navbar-social{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.navbar-social a{
+
+    position:relative;
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1.5px solid rgba(255,255,255,.14);
+
+    color:#c7d0dd;
+
+    transition:.35s;
+
+}
+
+.navbar-social a:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ---- Instagram: ring gradasi jingga -> merah pekat ---- */
+
+.social-instagram{
+
+    border-color:transparent;
+
+    color:#e8542f;
+
+}
+
+.social-instagram::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    padding:1.5px;
+
+    background:linear-gradient(135deg, #ffb347, #e8452c, #8b1e1e);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+.social-instagram:hover{
+
+    background:linear-gradient(135deg, #ffb347, #e8452c, #8b1e1e);
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(232,69,44,.35);
+
+}
+
+/* ---- Discord: biru elegan ---- */
+
+.social-discord{
+
+    border-color:rgba(88,101,242,.55);
+
+    color:#7289f4;
+
+}
+
+.social-discord:hover{
+
+    background:#5865f2;
+
+    border-color:#5865f2;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(88,101,242,.35);
+
+}
+
+/* ---- WhatsApp: hijau elegan ---- */
+
+.social-whatsapp{
+
+    border-color:rgba(31,174,107,.55);
+
+    color:#2fb572;
+
+}
+
+.social-whatsapp:hover{
+
+    background:#1fae6b;
+
+    border-color:#1fae6b;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(31,174,107,.35);
+
+}
+
+/* ===========================================
+   BUTTON
+=========================================== */
+
+.hire-button{
+
+    text-decoration:none;
+
+    padding:15px 34px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #d4af37,
+        #f0cf65
+    );
+
+    color:#08111f;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    transition:.35s;
+
+}
+
+.hire-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(212,175,55,.35);
+
+}
+
+/* ===========================================
+   HAMBURGER BUTTON (mobile)
+=========================================== */
+
+.hamburger-btn{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    padding:6px;
+
+    line-height:0;
+
+}
+
+/* Social icon versi mobile (di dalam dropdown) - default disembunyikan di desktop */
+
+.navbar-social-mobile{
+
+    display:none;
+
+}
+
+/* ===========================================
+   MEDIUM DESKTOP / LAPTOP (fix biar tidak berdempetan)
+=========================================== */
+
+@media(max-width:1366px) and (min-width:1101px){
+
+    .navbar-container{
+
+        padding:0 5%;
+
+        gap:18px;
+
+    }
+
+    .logo{
+
+        font-size:34px;
+
+    }
+
+    .nav-links{
+
+        gap:28px;
+
+    }
+
+    .nav-links a{
+
+        font-size:15px;
+
+    }
+
+    .navbar-right{
+
+        gap:18px;
+
+    }
+
+    .navbar-social{
+
+        gap:10px;
+
+    }
+
+    .navbar-social a{
+
+        width:38px;
+
+        height:38px;
+
+        font-size:16px;
+
+    }
+
+    .hire-button{
+
+        padding:13px 24px;
+
+        font-size:15px;
+
+    }
+
+}
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media(max-width:1100px){
+
+    .navbar-container{
+
+        padding:0 5%;
+
+    }
+
+    .navbar-right > .navbar-social{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .nav-links{
+
+        gap:25px;
+
+    }
+
+    .logo{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    /* Tombol hamburger cuma muncul di layar sempit */
+
+    .hamburger-btn{
+
+        display:block;
+
+    }
+
+    .hire-button{
+
+        padding:11px 18px;
+
+        font-size:14px;
+
+    }
+
+    /* Dropdown menu mobile: default tersembunyi di luar layar */
+
+    .navbar-container > nav{
+
+        position:fixed;
+
+        top:0;
+
+        right:-100%;
+
+        width:78%;
+
+        max-width:320px;
+
+        height:100vh;
+
+        background:#08111f;
+
+        border-left:1px solid rgba(255,255,255,.08);
+
+        box-shadow:-20px 0 50px rgba(0,0,0,.45);
+
+        padding:100px 32px 40px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:40px;
+
+        transition:right .4s ease;
+
+        overflow-y:auto;
+
+    }
+
+    .navbar-container > nav.nav-open{
+
+        right:0;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:26px;
+
+    }
+
+    .nav-links a{
+
+        font-size:19px;
+
+    }
+
+    .navbar-social-mobile{
+
+        display:flex;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo{
+
+        font-size:30px;
+
+    }
+
+    .hire-button{
+
+        padding:10px 14px;
+
+        font-size:13px;
+
+    }
+
+    .navbar-container > nav{
+
+        width:100%;
+
+        max-width:100%;
+
+    }
+
+}

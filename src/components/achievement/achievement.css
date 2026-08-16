@@ -1,0 +1,155 @@
+/* ==========================================================
+   ACHIEVEMENT SECTION
+========================================================== */
+
+.achievement{
+    position:relative;
+    width:100%;
+    padding:140px 8% 100px;
+    background:#08111f;
+    overflow:hidden;
+}
+
+.achievement-container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:980px;
+    margin:0 auto;
+}
+
+.achievement-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+/* section-eyebrow & section-title dipakai bersama Portfolio.css,
+   didefinisikan ulang di sini biar Achievement.css tetap
+   berdiri sendiri kalau nanti diimpor terpisah */
+
+.achievement .section-eyebrow{
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.achievement .section-title{
+    margin-top:16px;
+    font-size:48px;
+    font-weight:800;
+    color:white;
+}
+
+/* ==========================================================
+   ACHIEVEMENT GRID
+========================================================== */
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:40px;
+}
+
+/* ==========================================================
+   ACHIEVEMENT CARD
+========================================================== */
+
+.achievement-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:40px 32px 32px;
+    border-radius:32px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(212,175,55,.25);
+    backdrop-filter:blur(10px);
+    box-shadow:0 25px 70px rgba(0,0,0,.35);
+}
+
+/* ==========================================================
+   TITLE (di atas gambar, gold terang)
+========================================================== */
+
+.achievement-title{
+    font-size:32px;
+    font-weight:800;
+    letter-spacing:1px;
+    text-align:center;
+    margin:0;
+    background:linear-gradient(180deg, #fff6d6 0%, #ffd54a 45%, #d4af37 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 0 14px rgba(255, 213, 74, .45));
+}
+
+/* ==========================================================
+   MEDIA
+========================================================== */
+
+.achievement-media{
+    flex-shrink:0;
+    width:220px;
+    border-radius:24px;
+    overflow:hidden;
+    border:2px solid rgba(212,175,55,.45);
+    background:linear-gradient(160deg, #1c3358, #0d1b30);
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.achievement-media img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .achievement{
+        padding:90px 6% 70px;
+    }
+
+    .achievement .section-title{
+        font-size:32px;
+    }
+
+    .achievement-grid{
+        grid-template-columns:1fr;
+        gap:28px;
+    }
+
+    .achievement-card{
+        padding:32px 24px 28px;
+        gap:18px;
+    }
+
+    .achievement-media{
+        width:170px;
+    }
+
+    .achievement-title{
+        font-size:26px;
+    }
+}
+
+@media(max-width:480px){
+
+    .achievement{
+        padding:70px 5% 60px;
+    }
+
+    .achievement .section-title{
+        font-size:27px;
+    }
+
+    .achievement-card{
+        padding:28px 20px 24px;
+    }
+}
