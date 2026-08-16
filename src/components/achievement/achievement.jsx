@@ -1,4 +1,4 @@
-import "./Achievement.css";
+import "./achievement.css";
 
 import IMO210Img from "../../assets/images/achievements/IMO_210.png";
 import MABARImg from "../../assets/images/achievements/MABAR.png";
