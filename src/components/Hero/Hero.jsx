@@ -42,12 +42,12 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#projects" className="btn-primary">
+            <a href="#portfolio" className="btn-primary">
               View Projects
               <FaArrowRight />
             </a>
 
-            <a href="#contact" className="btn-secondary">
+            <a href="#hero-social" className="btn-secondary">
               Contact Me
             </a>
           </div>
@@ -69,7 +69,7 @@ function Hero() {
             </div>
           </div>
 
-          <div className="hero-social">
+          <div className="hero-social" id="hero-social">
             <a
               href="https://www.instagram.com/zfalgiz_?igsh=MTJ0aGNkcWRicWR2MQ=="
               target="_blank"
