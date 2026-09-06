@@ -21,10 +21,10 @@ import me from "../../assets/images/about/ME.png";
   sesuai konteks masing-masing foto.
 */
 const aboutGallery = [
-  { image: me, caption: "Ini saya, saya senang mengambil gambar dengan gaya-gaya seperti yang ada di foto, jika anda ingin melihat beberapa foto saya anda bisa mengunjungi sosial media saya yang sudah saya cantumkan di website ini" },
-  { image: buku, caption: "Ketika sehabis kegiatan di luar, atau jika sedang butuh ketengan saya suka membaca buku, menurut saya membaca bisa membantu meningkatkan fokus dan menciptakan ketenangan, dan nilai plus nya saya mendapat ilmu" },
-  { image: football, caption: "Salah satu hobi saya adalah sepak bola, saya dulu ketika masih duduk di sekolah dasar atau SD sampai SMP sempat bergabung ke sebuah akademi sepak bola, namun sekarang saya hanya mengikuti kegiatan rutin bermain fun football" },
-  { image: mabar, caption: "Ketika ada waktu luang saya suka bermain game bersama teman-teman saya, saya cukup mahir bermain Mobile Legends, saya sempat bermain selayaknya profesional player, mengikuti tournament onlline dan menjuarai beberapa kejuaraan/liga nya" },
+  { image: Me, caption: "Hai saya Muhammad Hudzaif alghifari atau biasa di panggil Algi, saya memiliki minat dalam belajar tekhnologi dan ilmu-ilmu lain seperti sains fisika dan filsafat, namun saya memfokuskan diri untuk tekhnologi informatika." },
+  { image: Buku, caption: "Membaca buku adalah salah satu hobi yang senang saya lakoni saat sedang bersantai, beberapa buku yang menarik minat saya seperti Politik, Psikologi, Retorika, Filsafat dan sebagainya selalu menemani saya bersama sebungkus rokok dan secangkir kopi." },
+  { image: Football, caption: "Sepak bola juga salah satu hobi saya, salah satu olahraga yang saya pilih untuk di lakoni untuk tujuan menjaga kesehatan fisik saya." },
+  { image: Menulis, caption: "Menulis adalah media bagi isi fikiran untuk eksis, alasan mengapa saya menampilkan forum menulis di web.site ini karna saya tidak ingin memenjarakan isi fikiran saya dan berharap akan berguna bagi audiens yang membaca.." },
 ];
 
 function About() {
@@ -47,8 +47,8 @@ function About() {
           </h2>
 
           <p className="about-desc">
-            Halo! Saya <strong>Muhammad Hudzaif AL Ghifari</strong> atau anda bisa memanggil saya <strong>Algi</strong>, mahasiswa S1 Teknologi
-            Informasi yang memiliki minat besar dalam pengembangan Website,
+            Halo! Saya <strong>Muhammad Hudzaif AL Ghifari</strong> atau anda bisa memanggil saya <strong>Algi</strong>, mahasiswa S1 Informatika 
+            yang memiliki minat besar dalam pengembangan Website,
             Artificial Intelligence, serta UI/UX Design.
           </p>
 
@@ -136,11 +136,11 @@ function About() {
 
                 <div>
 
-                  <h4>Information Technology Student</h4>
+                  <h4>Ilmu Komputer & Digital Student</h4>
 
                   <p>
                     Sedang menempuh pendidikan S1
-                    Teknologi Informasi.
+                    Informatika.
                   </p>
 
                 </div>
