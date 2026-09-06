@@ -33,7 +33,7 @@ function Hero() {
             <span>Zaif</span>
           </h1>
 
-          <h2 className="hero-role">Mahasiswa Jurusan IT — Menempuh S1</h2>
+          <h2 className="hero-role">Mahasiswa Jurusan Ilmu Komputer & Digital — Menempuh S1 Informatika</h2>
 
           <p className="hero-description">
             Mahasiswa Universitas Muhammadiyah Semarang yang memiliki
@@ -115,7 +115,7 @@ function Hero() {
 
               <div className="profile-info">
                 <h3>Algi Zaif</h3>
-                <p>Information Technology Student</p>
+                <p>ILKOMDIGI STUDENT</p>
               </div>
             </div>
           </div>
