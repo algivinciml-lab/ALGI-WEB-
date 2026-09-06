@@ -1,6 +1,7 @@
 import "./Navbar.css";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import {
   FaInstagram,
@@ -77,14 +78,19 @@ function Navbar() {
             </li>
 
             <li>
-              <a href="#contact" onClick={closeMenu}>
+              <Link to="/sosmed" onClick={closeMenu}>
                 Contact
-              </a>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/tulisan" onClick={closeMenu}>
+                Pena Digital
+              </Link>
             </li>
 
           </ul>
 
-          {/* Sosial media ikut muncul di dalam dropdown mobile */}
           <div className="navbar-social navbar-social-mobile">
 
             <a
@@ -120,8 +126,6 @@ function Navbar() {
           </div>
 
         </nav>
-
-        {/* ================= RIGHT (desktop) ================= */}
 
         <div className="navbar-right">
 
@@ -167,8 +171,6 @@ function Navbar() {
           >
             Hire Me
           </a>
-
-          {/* ================= HAMBURGER (mobile) ================= */}
 
           <button
             className="hamburger-btn"

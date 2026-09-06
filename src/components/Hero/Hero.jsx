@@ -115,7 +115,7 @@ function Hero() {
 
               <div className="profile-info">
                 <h3>Algi Zaif</h3>
-                <p>ILKOMDIGI STUDENT</p>
+                <p>FIKOMDIGI STUDENT</p>
               </div>
             </div>
           </div>

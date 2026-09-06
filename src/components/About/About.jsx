@@ -10,10 +10,10 @@ import {
 } from "react-icons/fa";
 
 // Foto galeri personal (hobi/minat)
-import buku from "../../assets/images/about/BUKU.png";
-import football from "../../assets/images/about/FOOTBALL.png";
-import mabar from "../../assets/images/about/MABAR.png";
-import me from "../../assets/images/about/ME.png";
+import buku from "../../assets/images/about/ME.png";
+import football from "../../assets/images/about/BUKU.png";
+import mabar from "../../assets/images/about/FOOTBALL.png";
+import me from "../../assets/images/about/MENULIS.png";
 
 /*
   CARA GANTI CAPTION FOTO:
@@ -21,10 +21,10 @@ import me from "../../assets/images/about/ME.png";
   sesuai konteks masing-masing foto.
 */
 const aboutGallery = [
-  { image: Me, caption: "Hai saya Muhammad Hudzaif alghifari atau biasa di panggil Algi, saya memiliki minat dalam belajar tekhnologi dan ilmu-ilmu lain seperti sains fisika dan filsafat, namun saya memfokuskan diri untuk tekhnologi informatika." },
-  { image: Buku, caption: "Membaca buku adalah salah satu hobi yang senang saya lakoni saat sedang bersantai, beberapa buku yang menarik minat saya seperti Politik, Psikologi, Retorika, Filsafat dan sebagainya selalu menemani saya bersama sebungkus rokok dan secangkir kopi." },
-  { image: Football, caption: "Sepak bola juga salah satu hobi saya, salah satu olahraga yang saya pilih untuk di lakoni untuk tujuan menjaga kesehatan fisik saya." },
-  { image: Menulis, caption: "Menulis adalah media bagi isi fikiran untuk eksis, alasan mengapa saya menampilkan forum menulis di web.site ini karna saya tidak ingin memenjarakan isi fikiran saya dan berharap akan berguna bagi audiens yang membaca.." },
+  { image: buku, caption: "Hai saya Muhammad Hudzaif alghifari atau biasa di panggil Algi, saya memiliki minat dalam belajar tekhnologi dan ilmu-ilmu lain seperti Sains fisika, Filsafat dan Psikologi namun Informatika tetap menjadi prioritas utama saya." },
+  { image: football, caption: "Membaca buku adalah salah satu hobi yang senang saya lakoni saat sedang bersantai, beberapa buku yang menarik minat saya dan sudah saya baca seperti MADILOG Tan malaka, RETORIKA Aristoteles, Why Rokok Dr.Ronald hutapea, Psikologi umum Drs. Alex Sobur dan sebagainya." },
+  { image: mabar, caption: "Sepak bola juga salah satu hobi saya, salah satu olahraga yang saya pilih untuk tujuan menjaga kesehatan fisik, selain itu saya memang menggemari sepal bola sejak dari kecil karena saya tumbuh di lingkungan yang cukup menggemari sepakbola mungkin ini faktor saya menyukai sepakbola sejak dari kecil." },
+  { image: me, caption: "Menulis adalah media bagi isi fikiran untuk eksis, alasan mengapa saya menampilkan forum menulis di web.site ini karna tujuan saya agar tulisan saya dapat bermanfaat sedikit atau banyaknya bagi pembaca, saya juga membuka ruang bagi audiens jika ingin berdiskusi tentang tulisan yang saya sajikan." },
 ];
 
 function About() {
